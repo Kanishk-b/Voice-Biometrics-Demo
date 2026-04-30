@@ -85,9 +85,9 @@ if st.button("🔍 Verify Voices", type="primary", use_container_width=True):
                 is_match = score >= threshold
                 
                 if is_match:
-                    st.success(f"✅ **MATCH CONFIRMED** | Score: {score:.4f} (Threshold: {threshold})")
+                    st.success(f"✅ **MATCH CONFIRMED**")
                 else:
-                    st.error(f"❌ **ACCESS DENIED: IMPOSTER** | Score: {score:.4f} (Threshold: {threshold})")
+                    st.error(f"❌ **MATCH NOT CONFIRMED**")
             except Exception as e:
                 st.error(f"Error: {e}")
     else:
